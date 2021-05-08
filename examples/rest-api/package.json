@@ -20,6 +20,6 @@
     "daf-resolver": "../../packages/daf-resolver",
     "daf-w3c": "../../packages/daf-w3c",
     "express": "^4.17.1",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.25"
   }
 }
