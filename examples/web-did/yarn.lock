@@ -532,8 +532,19 @@ crypto-random-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
-daf-core@../../packages/daf-core, daf-core@^5.6.4, daf-core@^5.6.5:
-  version "5.6.5"
+daf-core@../../packages/daf-core:
+  version "6.3.0"
+  dependencies:
+    blakejs "^1.1.0"
+    debug "^4.1.1"
+    events "^3.0.0"
+    typeorm "^0.2.24"
+    uuid "^7.0.2"
+
+daf-core@^6.3.0, daf-core@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/daf-core/-/daf-core-6.4.1.tgz#d72a4a94ff09a4fdb99bc393373a18fc73f2db8b"
+  integrity sha512-hK5STUxYakpwmf+9hMbSInWWRz7fIfAQGk5ZjA2rk8jbXa0NhkwZ+UeywoWgz8UK2bNTJbEL37IGqEBQWA/A+A==
   dependencies:
     blakejs "^1.1.0"
     debug "^4.1.1"
@@ -542,26 +553,36 @@ daf-core@../../packages/daf-core, daf-core@^5.6.4, daf-core@^5.6.5:
     uuid "^7.0.2"
 
 daf-did-comm@../../packages/daf-did-comm:
-  version "5.6.5"
+  version "6.3.0"
   dependencies:
     cross-fetch "^3.0.4"
-    daf-core "^5.6.5"
+    daf-core "^6.3.0"
     debug "^4.1.1"
     uuid "^3.3.3"
 
-daf-did-jwt@../../packages/daf-did-jwt, daf-did-jwt@^5.6.5:
-  version "5.6.5"
+daf-did-jwt@../../packages/daf-did-jwt:
+  version "6.3.0"
   dependencies:
-    daf-core "^5.6.5"
+    daf-core "^6.3.0"
+    debug "^4.1.1"
+    did-jwt "^4.3.2"
+    did-resolver "^1.1.0"
+
+daf-did-jwt@^6.3.0:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/daf-did-jwt/-/daf-did-jwt-6.4.1.tgz#932db6c37f33a0371184bacfbd7632332aef0de8"
+  integrity sha512-YzCNCfCCev1NpLmHn6zKGr9e8xJEfhEPm7nh5ZjfxvSDbIWtqRF/u7IWklHOGBQdhrHibu/CyBhxbF9O3IXlIw==
+  dependencies:
+    daf-core "^6.4.1"
     debug "^4.1.1"
     did-jwt "^4.3.2"
     did-resolver "^1.1.0"
 
 daf-libsodium@../../packages/daf-libsodium:
-  version "5.6.5"
+  version "6.3.0"
   dependencies:
     base-58 "^0.0.1"
-    daf-core "^5.6.5"
+    daf-core "^6.3.0"
     debug "^4.1.1"
     did-jwt "^4.3.2"
     elliptic "^6.5.2"
@@ -569,7 +590,7 @@ daf-libsodium@../../packages/daf-libsodium:
     libsodium-wrappers "^0.7.6"
 
 daf-resolver@../../packages/daf-resolver:
-  version "5.5.2"
+  version "6.3.0"
   dependencies:
     debug "^4.1.1"
     did-resolver "^1.1.0"
@@ -578,19 +599,19 @@ daf-resolver@../../packages/daf-resolver:
     web-did-resolver "^1.2.0"
 
 daf-w3c@../../packages/daf-w3c:
-  version "5.6.5"
+  version "6.3.0"
   dependencies:
     blakejs "^1.1.0"
-    daf-core "^5.6.5"
-    daf-did-jwt "^5.6.5"
+    daf-core "^6.3.0"
+    daf-did-jwt "^6.3.0"
     debug "^4.1.1"
     did-jwt-vc "0.2.0"
     did-resolver "^1.1.0"
 
 daf-web-did@../../packages/daf-web-did:
-  version "5.6.4"
+  version "6.3.0"
   dependencies:
-    daf-core "^5.6.4"
+    daf-core "^6.3.0"
     debug "^4.1.1"
 
 dashdash@^1.12.0:
@@ -1102,9 +1123,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 glob-parent@~5.1.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.1.tgz#b6c1ef417c4e5663ea498f1c45afac6916bbc229"
-  integrity sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
+  integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
 
